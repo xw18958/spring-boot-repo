@@ -17,6 +17,11 @@ public class ControllerA {
         return mapperA.findAll();
     }
 
+    @GetMapping("/a/rows")
+    int rows(){
+        return mapperA.rows();
+    }
+
     @GetMapping("/a/fuzzy")
     List<A> fuzzy(){
         return mapperA.fuzzySearch();

@@ -20,8 +20,12 @@ public class ControllerB {
 
     @PostMapping("/b/insert")
     String insert_A(@RequestBody B b){
-        mapperB.insert(b);
-        return "inserted";
+        try{
+            mapperB.insert(b);
+            return "inserted";
+        }catch(Exception e){
+            return "Exception!";
+        }
     }
 
     @PostMapping("/b/delete")

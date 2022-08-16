@@ -9,6 +9,10 @@ import java.util.List;
 public interface MapperA {
     @Select("select * from A")
     List<A> findAll();
+
+    @Select("select count(*) from B")
+    int rows();
+
     @Select("select * from A where username like 'b%'")
     List<A> fuzzySearch();
     @Select("select sum(aa) from A")
