@@ -1,0 +1,281 @@
+[INFO] 2022-08-25 03:17:04.538  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 47168 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-08-25 03:17:04.541  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-08-25 03:17:05.290  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-08-25 03:17:05.293  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-08-25 03:17:05.320  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-08-25 03:17:05.902  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-08-25 03:17:05.911  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-08-25 03:17:05.912  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-08-25 03:17:05.912  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-08-25 03:17:06.008  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-08-25 03:17:06.009  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1408 ms
+[INFO] 2022-08-25 03:17:06.765  org.apache.coyote.http11.Http11NioProtocol.java - Starting ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-08-25 03:17:06.780  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] 2022-08-25 03:17:06.795  com.abc.multi_module.system.SystemApplication.java - Started SystemApplication in 2.722 seconds (JVM running for 3.328)
+[INFO] 2022-08-25 03:17:19.788  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2022-08-25 03:17:19.789  org.springframework.web.servlet.DispatcherServlet.java - Initializing Servlet 'dispatcherServlet'
+[INFO] 2022-08-25 03:17:19.791  org.springframework.web.servlet.DispatcherServlet.java - Completed initialization in 1 ms
+[INFO] 2022-08-25 03:17:19.847  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Starting...
+[INFO] 2022-08-25 03:17:20.133  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Start completed.
+[INFO] 2022-08-25 03:17:58.159  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown initiated...
+[INFO] 2022-08-25 03:17:58.184  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown completed.
+[INFO] 2022-08-25 03:21:57.273  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 47364 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-08-25 03:21:57.276  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-08-25 03:21:58.052  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-08-25 03:21:58.056  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-08-25 03:21:58.082  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-08-25 03:21:58.639  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-08-25 03:21:58.649  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-08-25 03:21:58.650  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-08-25 03:21:58.650  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-08-25 03:21:58.738  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-08-25 03:21:58.738  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1400 ms
+[INFO] 2022-08-25 03:21:59.624  org.apache.coyote.http11.Http11NioProtocol.java - Starting ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-08-25 03:21:59.644  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] 2022-08-25 03:21:59.658  com.abc.multi_module.system.SystemApplication.java - Started SystemApplication in 2.793 seconds (JVM running for 3.389)
+[INFO] 2022-08-25 03:22:08.066  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2022-08-25 03:22:08.069  org.springframework.web.servlet.DispatcherServlet.java - Initializing Servlet 'dispatcherServlet'
+[INFO] 2022-08-25 03:22:08.072  org.springframework.web.servlet.DispatcherServlet.java - Completed initialization in 3 ms
+[INFO] 2022-08-25 03:22:08.131  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Starting...
+[INFO] 2022-08-25 03:22:08.415  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Start completed.
+[INFO] 2022-08-25 03:23:20.315  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown initiated...
+[INFO] 2022-08-25 03:23:20.329  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown completed.
+[INFO] 2022-08-25 03:24:26.116  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 47462 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-08-25 03:24:26.119  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-08-25 03:24:26.862  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-08-25 03:24:26.865  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-08-25 03:24:26.891  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-08-25 03:24:27.458  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-08-25 03:24:27.468  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-08-25 03:24:27.468  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-08-25 03:24:27.468  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-08-25 03:24:27.558  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-08-25 03:24:27.558  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1384 ms
+[INFO] 2022-08-25 03:24:28.262  org.apache.coyote.http11.Http11NioProtocol.java - Starting ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-08-25 03:24:28.277  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] 2022-08-25 03:24:28.285  com.abc.multi_module.system.SystemApplication.java - Started SystemApplication in 2.564 seconds (JVM running for 3.093)
+[INFO] 2022-08-25 03:24:33.256  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2022-08-25 03:24:33.258  org.springframework.web.servlet.DispatcherServlet.java - Initializing Servlet 'dispatcherServlet'
+[INFO] 2022-08-25 03:24:33.259  org.springframework.web.servlet.DispatcherServlet.java - Completed initialization in 0 ms
+[INFO] 2022-08-25 03:24:33.286  com.abc.multi_module.system.controller.Controller.java - 222222
+[INFO] 2022-08-25 03:24:33.308  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Starting...
+[INFO] 2022-08-25 03:24:33.553  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Start completed.
+[INFO] 2022-08-25 03:30:24.997  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown initiated...
+[INFO] 2022-08-25 03:30:25.048  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown completed.
+[INFO] 2022-08-25 03:30:28.792  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 47619 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-08-25 03:30:28.796  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-08-25 03:30:29.537  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-08-25 03:30:29.542  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-08-25 03:30:29.570  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-08-25 03:30:30.128  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-08-25 03:30:30.138  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-08-25 03:30:30.138  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-08-25 03:30:30.138  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-08-25 03:30:30.231  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-08-25 03:30:30.231  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1380 ms
+[INFO] 2022-08-25 03:30:30.946  org.apache.coyote.http11.Http11NioProtocol.java - Starting ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-08-25 03:30:30.961  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] 2022-08-25 03:30:30.969  com.abc.multi_module.system.SystemApplication.java - Started SystemApplication in 2.554 seconds (JVM running for 3.066)
+[INFO] 2022-08-25 03:30:35.595  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2022-08-25 03:30:35.596  org.springframework.web.servlet.DispatcherServlet.java - Initializing Servlet 'dispatcherServlet'
+[INFO] 2022-08-25 03:30:35.598  org.springframework.web.servlet.DispatcherServlet.java - Completed initialization in 2 ms
+[INFO] 2022-08-25 03:30:35.629  com.abc.multi_module.system.controller.Controller.java - 222222
+[INFO] 2022-08-25 03:30:35.649  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Starting...
+[INFO] 2022-08-25 03:30:35.877  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Start completed.
+[INFO] 2022-08-25 03:31:32.256  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown initiated...
+[INFO] 2022-08-25 03:31:32.269  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown completed.
+[INFO] 2022-08-25 03:31:35.947  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 47652 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-08-25 03:31:35.951  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-08-25 03:31:36.695  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-08-25 03:31:36.698  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-08-25 03:31:36.723  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-08-25 03:31:37.524  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-08-25 03:31:37.537  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-08-25 03:31:37.538  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-08-25 03:31:37.539  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-08-25 03:31:37.647  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-08-25 03:31:37.648  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1639 ms
+[INFO] 2022-08-25 03:31:38.497  org.apache.coyote.http11.Http11NioProtocol.java - Starting ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-08-25 03:31:38.513  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] 2022-08-25 03:31:38.521  com.abc.multi_module.system.SystemApplication.java - Started SystemApplication in 2.95 seconds (JVM running for 3.455)
+[INFO] 2022-08-25 03:31:48.091  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2022-08-25 03:31:48.092  org.springframework.web.servlet.DispatcherServlet.java - Initializing Servlet 'dispatcherServlet'
+[INFO] 2022-08-25 03:31:48.093  org.springframework.web.servlet.DispatcherServlet.java - Completed initialization in 0 ms
+[INFO] 2022-08-25 03:31:48.138  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Starting...
+[INFO] 2022-08-25 03:31:48.315  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Start completed.
+[INFO] 2022-08-25 03:33:06.517  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown initiated...
+[INFO] 2022-08-25 03:33:06.563  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown completed.
+[INFO] 2022-08-25 03:51:11.937  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 48161 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-08-25 03:51:11.941  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-08-25 03:51:12.790  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-08-25 03:51:12.793  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-08-25 03:51:12.818  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-08-25 03:51:13.452  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-08-25 03:51:13.462  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-08-25 03:51:13.462  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-08-25 03:51:13.462  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-08-25 03:51:13.544  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-08-25 03:51:13.544  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1532 ms
+[INFO] 2022-08-25 03:51:14.303  org.apache.coyote.http11.Http11NioProtocol.java - Starting ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-08-25 03:51:14.322  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] 2022-08-25 03:51:14.331  com.abc.multi_module.system.SystemApplication.java - Started SystemApplication in 2.827 seconds (JVM running for 3.448)
+[INFO] 2022-08-25 03:51:27.060  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2022-08-25 03:51:27.062  org.springframework.web.servlet.DispatcherServlet.java - Initializing Servlet 'dispatcherServlet'
+[INFO] 2022-08-25 03:51:27.063  org.springframework.web.servlet.DispatcherServlet.java - Completed initialization in 1 ms
+[INFO] 2022-08-25 03:51:27.115  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Starting...
+[INFO] 2022-08-25 03:51:27.411  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Start completed.
+[INFO] 2022-08-25 03:53:13.953  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown initiated...
+[INFO] 2022-08-25 03:53:13.983  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown completed.
+[INFO] 2022-08-25 03:53:16.530  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 48233 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-08-25 03:53:16.533  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-08-25 03:53:17.269  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-08-25 03:53:17.272  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-08-25 03:53:17.296  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-08-25 03:53:17.853  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-08-25 03:53:17.863  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-08-25 03:53:17.864  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-08-25 03:53:17.864  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-08-25 03:53:17.945  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-08-25 03:53:17.945  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1355 ms
+[INFO] 2022-08-25 03:53:18.694  org.apache.coyote.http11.Http11NioProtocol.java - Starting ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-08-25 03:53:18.708  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] 2022-08-25 03:53:18.717  com.abc.multi_module.system.SystemApplication.java - Started SystemApplication in 2.571 seconds (JVM running for 3.095)
+[INFO] 2022-08-25 03:53:44.742  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2022-08-25 03:53:44.744  org.springframework.web.servlet.DispatcherServlet.java - Initializing Servlet 'dispatcherServlet'
+[INFO] 2022-08-25 03:53:44.745  org.springframework.web.servlet.DispatcherServlet.java - Completed initialization in 1 ms
+[INFO] 2022-08-25 03:56:23.038  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 48345 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-08-25 03:56:23.041  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-08-25 03:56:23.753  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-08-25 03:56:23.756  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-08-25 03:56:23.781  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+[WARN] 2022-08-25 03:56:24.175  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext.java - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.abc.multi_module.system.controller [Xlint:invalidAbsoluteTypeName]
+[INFO] 2022-08-25 03:56:24.182  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.java - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-08-25 03:56:24.202  org.springframework.boot.SpringApplication.java - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.abc.multi_module.system.controller [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:270)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:567)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.abc.multi_module.system.SystemApplication.main(SystemApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.abc.multi_module.system.controller [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	... 14 common frames omitted
+Caused by: java.lang.IllegalArgumentException: warning no match for this type name: com.abc.multi_module.system.controller [Xlint:invalidAbsoluteTypeName]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:226)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:289)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:321)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:128)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:97)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:78)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:341)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:293)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:455)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	... 36 common frames omitted
+[INFO] 2022-08-25 03:58:27.140  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 48403 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-08-25 03:58:27.142  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-08-25 03:58:27.926  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-08-25 03:58:27.930  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-08-25 03:58:27.957  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+[WARN] 2022-08-25 03:58:28.337  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext.java - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.abc.multi_module.system.controller [Xlint:invalidAbsoluteTypeName]
+[INFO] 2022-08-25 03:58:28.345  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.java - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-08-25 03:58:28.370  org.springframework.boot.SpringApplication.java - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.abc.multi_module.system.controller [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:270)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:567)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.abc.multi_module.system.SystemApplication.main(SystemApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.abc.multi_module.system.controller [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	... 14 common frames omitted
+Caused by: java.lang.IllegalArgumentException: warning no match for this type name: com.abc.multi_module.system.controller [Xlint:invalidAbsoluteTypeName]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:226)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:289)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:321)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:128)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:97)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:78)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:341)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:293)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:455)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	... 36 common frames omitted

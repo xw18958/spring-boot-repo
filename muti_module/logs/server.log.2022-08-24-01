@@ -1,0 +1,21 @@
+[INFO] 2022-08-24 01:54:13.423  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 32506 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-08-24 01:54:13.427  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-08-24 01:54:14.209  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-08-24 01:54:14.214  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-08-24 01:54:14.240  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-08-24 01:54:14.804  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-08-24 01:54:14.814  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-08-24 01:54:14.814  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-08-24 01:54:14.814  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-08-24 01:54:14.916  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-08-24 01:54:14.917  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1425 ms
+[INFO] 2022-08-24 01:54:15.653  org.apache.coyote.http11.Http11NioProtocol.java - Starting ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-08-24 01:54:15.667  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] 2022-08-24 01:54:15.678  com.abc.multi_module.system.SystemApplication.java - Started SystemApplication in 2.7 seconds (JVM running for 3.367)
+[INFO] 2022-08-24 01:54:29.228  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2022-08-24 01:54:29.229  org.springframework.web.servlet.DispatcherServlet.java - Initializing Servlet 'dispatcherServlet'
+[INFO] 2022-08-24 01:54:29.231  org.springframework.web.servlet.DispatcherServlet.java - Completed initialization in 2 ms
+[INFO] 2022-08-24 01:54:29.284  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Starting...
+[INFO] 2022-08-24 01:54:29.485  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Start completed.
+[INFO] 2022-08-24 01:54:49.152  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown initiated...
+[INFO] 2022-08-24 01:54:49.162  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown completed.
