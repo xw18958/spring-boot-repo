@@ -1,0 +1,453 @@
+[INFO] 2022-09-01 08:03:15.182  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 87231 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-09-01 08:03:15.194  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-09-01 08:03:15.945  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-01 08:03:15.946  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-01 08:03:15.970  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-01 08:03:16.202  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-01 08:03:16.203  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-01 08:03:16.210  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-01 08:03:17.086  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-09-01 08:03:17.095  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-01 08:03:17.096  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-09-01 08:03:17.096  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-09-01 08:03:17.195  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-09-01 08:03:17.195  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1933 ms
+[WARN] 2022-09-01 08:03:17.819  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext.java - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'controller': Unsatisfied dependency expressed through field 'verificationDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'verificationDao': Unsatisfied dependency expressed through field 'template'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'template' defined in class path resource [com/abc/multi_module/system/config/RedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.core.RedisTemplate]: Factory method 'template' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [com/abc/multi_module/system/config/RedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.connection.jedis.JedisConnectionFactory]: Factory method 'connectionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: redis/clients/jedis/JedisClientConfig
+[INFO] 2022-09-01 08:03:17.822  org.apache.catalina.core.StandardService.java - Stopping service [Tomcat]
+[INFO] 2022-09-01 08:03:17.836  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.java - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-09-01 08:03:17.860  org.springframework.boot.SpringApplication.java - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'controller': Unsatisfied dependency expressed through field 'verificationDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'verificationDao': Unsatisfied dependency expressed through field 'template'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'template' defined in class path resource [com/abc/multi_module/system/config/RedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.core.RedisTemplate]: Factory method 'template' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [com/abc/multi_module/system/config/RedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.connection.jedis.JedisConnectionFactory]: Factory method 'connectionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: redis/clients/jedis/JedisClientConfig
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.abc.multi_module.system.SystemApplication.main(SystemApplication.java:13)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'verificationDao': Unsatisfied dependency expressed through field 'template'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'template' defined in class path resource [com/abc/multi_module/system/config/RedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.core.RedisTemplate]: Factory method 'template' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [com/abc/multi_module/system/config/RedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.connection.jedis.JedisConnectionFactory]: Factory method 'connectionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: redis/clients/jedis/JedisClientConfig
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'template' defined in class path resource [com/abc/multi_module/system/config/RedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.core.RedisTemplate]: Factory method 'template' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [com/abc/multi_module/system/config/RedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.connection.jedis.JedisConnectionFactory]: Factory method 'connectionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: redis/clients/jedis/JedisClientConfig
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.core.RedisTemplate]: Factory method 'template' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [com/abc/multi_module/system/config/RedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.connection.jedis.JedisConnectionFactory]: Factory method 'connectionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: redis/clients/jedis/JedisClientConfig
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [com/abc/multi_module/system/config/RedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.connection.jedis.JedisConnectionFactory]: Factory method 'connectionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: redis/clients/jedis/JedisClientConfig
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:362)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:334)
+	at com.abc.multi_module.system.config.RedisConfig$$EnhancerBySpringCGLIB$$fa7b23c3.connectionFactory(<generated>)
+	at com.abc.multi_module.system.config.RedisConfig.template(RedisConfig.java:27)
+	at com.abc.multi_module.system.config.RedisConfig$$EnhancerBySpringCGLIB$$fa7b23c3.CGLIB$template$0(<generated>)
+	at com.abc.multi_module.system.config.RedisConfig$$EnhancerBySpringCGLIB$$fa7b23c3$$FastClassBySpringCGLIB$$d15c4143.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.abc.multi_module.system.config.RedisConfig$$EnhancerBySpringCGLIB$$fa7b23c3.template(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 48 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.connection.jedis.JedisConnectionFactory]: Factory method 'connectionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: redis/clients/jedis/JedisClientConfig
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 71 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: redis/clients/jedis/JedisClientConfig
+	at com.abc.multi_module.system.config.RedisConfig.connectionFactory(RedisConfig.java:21)
+	at com.abc.multi_module.system.config.RedisConfig$$EnhancerBySpringCGLIB$$fa7b23c3.CGLIB$connectionFactory$1(<generated>)
+	at com.abc.multi_module.system.config.RedisConfig$$EnhancerBySpringCGLIB$$fa7b23c3$$FastClassBySpringCGLIB$$d15c4143.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.abc.multi_module.system.config.RedisConfig$$EnhancerBySpringCGLIB$$fa7b23c3.connectionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 72 common frames omitted
+Caused by: java.lang.ClassNotFoundException: redis.clients.jedis.JedisClientConfig
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:604)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 83 common frames omitted
+[INFO] 2022-09-01 08:04:25.250  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 87284 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-09-01 08:04:25.256  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-09-01 08:04:25.930  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-01 08:04:25.931  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-01 08:04:25.954  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-01 08:04:26.166  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-01 08:04:26.166  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-01 08:04:26.175  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-01 08:04:27.028  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-09-01 08:04:27.038  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-01 08:04:27.038  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-09-01 08:04:27.039  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-09-01 08:04:27.125  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-09-01 08:04:27.126  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1806 ms
+[WARN] 2022-09-01 08:04:27.603  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext.java - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'controller': Unsatisfied dependency expressed through field 'verificationDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'verificationDao': Unsatisfied dependency expressed through field 'template'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'template' defined in class path resource [com/abc/multi_module/system/config/RedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.core.RedisTemplate]: Factory method 'template' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [com/abc/multi_module/system/config/RedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.connection.jedis.JedisConnectionFactory]: Factory method 'connectionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: redis/clients/jedis/JedisClientConfig
+[INFO] 2022-09-01 08:04:27.605  org.apache.catalina.core.StandardService.java - Stopping service [Tomcat]
+[INFO] 2022-09-01 08:04:27.616  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.java - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-09-01 08:04:27.635  org.springframework.boot.SpringApplication.java - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'controller': Unsatisfied dependency expressed through field 'verificationDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'verificationDao': Unsatisfied dependency expressed through field 'template'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'template' defined in class path resource [com/abc/multi_module/system/config/RedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.core.RedisTemplate]: Factory method 'template' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [com/abc/multi_module/system/config/RedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.connection.jedis.JedisConnectionFactory]: Factory method 'connectionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: redis/clients/jedis/JedisClientConfig
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.abc.multi_module.system.SystemApplication.main(SystemApplication.java:13)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'verificationDao': Unsatisfied dependency expressed through field 'template'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'template' defined in class path resource [com/abc/multi_module/system/config/RedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.core.RedisTemplate]: Factory method 'template' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [com/abc/multi_module/system/config/RedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.connection.jedis.JedisConnectionFactory]: Factory method 'connectionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: redis/clients/jedis/JedisClientConfig
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'template' defined in class path resource [com/abc/multi_module/system/config/RedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.core.RedisTemplate]: Factory method 'template' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [com/abc/multi_module/system/config/RedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.connection.jedis.JedisConnectionFactory]: Factory method 'connectionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: redis/clients/jedis/JedisClientConfig
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.core.RedisTemplate]: Factory method 'template' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [com/abc/multi_module/system/config/RedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.connection.jedis.JedisConnectionFactory]: Factory method 'connectionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: redis/clients/jedis/JedisClientConfig
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [com/abc/multi_module/system/config/RedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.connection.jedis.JedisConnectionFactory]: Factory method 'connectionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: redis/clients/jedis/JedisClientConfig
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:362)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:334)
+	at com.abc.multi_module.system.config.RedisConfig$$EnhancerBySpringCGLIB$$fa7b23c3.connectionFactory(<generated>)
+	at com.abc.multi_module.system.config.RedisConfig.template(RedisConfig.java:27)
+	at com.abc.multi_module.system.config.RedisConfig$$EnhancerBySpringCGLIB$$fa7b23c3.CGLIB$template$1(<generated>)
+	at com.abc.multi_module.system.config.RedisConfig$$EnhancerBySpringCGLIB$$fa7b23c3$$FastClassBySpringCGLIB$$d15c4143.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.abc.multi_module.system.config.RedisConfig$$EnhancerBySpringCGLIB$$fa7b23c3.template(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 48 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.connection.jedis.JedisConnectionFactory]: Factory method 'connectionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: redis/clients/jedis/JedisClientConfig
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 71 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: redis/clients/jedis/JedisClientConfig
+	at com.abc.multi_module.system.config.RedisConfig.connectionFactory(RedisConfig.java:21)
+	at com.abc.multi_module.system.config.RedisConfig$$EnhancerBySpringCGLIB$$fa7b23c3.CGLIB$connectionFactory$0(<generated>)
+	at com.abc.multi_module.system.config.RedisConfig$$EnhancerBySpringCGLIB$$fa7b23c3$$FastClassBySpringCGLIB$$d15c4143.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.abc.multi_module.system.config.RedisConfig$$EnhancerBySpringCGLIB$$fa7b23c3.connectionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 72 common frames omitted
+Caused by: java.lang.ClassNotFoundException: redis.clients.jedis.JedisClientConfig
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:604)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 83 common frames omitted
+[INFO] 2022-09-01 08:07:55.680  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 87399 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-09-01 08:07:55.687  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-09-01 08:07:56.400  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-01 08:07:56.401  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-01 08:07:56.426  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-01 08:07:56.639  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-01 08:07:56.640  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-01 08:07:56.648  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-01 08:07:57.540  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-09-01 08:07:57.550  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-01 08:07:57.550  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-09-01 08:07:57.551  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-09-01 08:07:57.644  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-09-01 08:07:57.644  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1888 ms
+[WARN] 2022-09-01 08:07:58.519  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:07:58.520  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/css/**']
+[WARN] 2022-09-01 08:07:58.521  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:07:58.521  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/js/**']
+[WARN] 2022-09-01 08:07:58.521  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/index.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:07:58.522  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/index.html']
+[WARN] 2022-09-01 08:07:58.522  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:07:58.522  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/img/**']
+[WARN] 2022-09-01 08:07:58.522  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/fonts/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:07:58.522  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/fonts/**']
+[WARN] 2022-09-01 08:07:58.522  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:07:58.522  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/favicon.ico']
+[INFO] 2022-09-01 08:07:58.565  org.springframework.security.web.DefaultSecurityFilterChain.java - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@59e7564b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@482ba4b1, org.springframework.security.web.context.SecurityContextPersistenceFilter@799f354a, org.springframework.security.web.header.HeaderWriterFilter@4f213a2, org.springframework.security.web.authentication.logout.LogoutFilter@62e73ab6, com.abc.multi_module.system.security.JwtFilter@4215e133, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@159ac15f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ace6346, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@307af381, org.springframework.security.web.session.SessionManagementFilter@7b5021d1, org.springframework.security.web.access.ExceptionTranslationFilter@1a2773a8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@44faa4f2]
+[INFO] 2022-09-01 08:07:59.204  org.apache.coyote.http11.Http11NioProtocol.java - Starting ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-01 08:07:59.219  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] 2022-09-01 08:07:59.228  com.abc.multi_module.system.SystemApplication.java - Started SystemApplication in 4.007 seconds (JVM running for 4.625)
+[INFO] 2022-09-01 08:08:26.959  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 87423 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-09-01 08:08:26.967  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-09-01 08:08:27.928  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-01 08:08:27.929  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-01 08:08:27.969  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-01 08:08:28.138  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-01 08:08:28.139  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-01 08:08:28.147  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-01 08:08:28.994  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-09-01 08:08:29.004  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-01 08:08:29.004  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-09-01 08:08:29.004  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-09-01 08:08:29.093  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-09-01 08:08:29.093  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1956 ms
+[WARN] 2022-09-01 08:08:29.891  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:08:29.891  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/css/**']
+[WARN] 2022-09-01 08:08:29.892  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:08:29.892  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/js/**']
+[WARN] 2022-09-01 08:08:29.892  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/index.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:08:29.892  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/index.html']
+[WARN] 2022-09-01 08:08:29.892  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:08:29.892  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/img/**']
+[WARN] 2022-09-01 08:08:29.892  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/fonts/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:08:29.892  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/fonts/**']
+[WARN] 2022-09-01 08:08:29.892  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:08:29.893  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/favicon.ico']
+[INFO] 2022-09-01 08:08:30.013  org.springframework.security.web.DefaultSecurityFilterChain.java - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3cc3f13e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69b3886f, org.springframework.security.web.context.SecurityContextPersistenceFilter@693f2213, org.springframework.security.web.header.HeaderWriterFilter@267891bf, org.springframework.security.web.authentication.logout.LogoutFilter@35e74e08, com.abc.multi_module.system.security.JwtFilter@3728a578, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e4eda17, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33bdd01, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53d30d23, org.springframework.security.web.session.SessionManagementFilter@9263c54, org.springframework.security.web.access.ExceptionTranslationFilter@54326e9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3ffd4b12]
+[INFO] 2022-09-01 08:08:30.600  org.apache.coyote.http11.Http11NioProtocol.java - Starting ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-01 08:08:30.614  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] 2022-09-01 08:08:30.622  com.abc.multi_module.system.SystemApplication.java - Started SystemApplication in 4.163 seconds (JVM running for 4.73)
+[INFO] 2022-09-01 08:09:06.503  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2022-09-01 08:09:06.505  org.springframework.web.servlet.DispatcherServlet.java - Initializing Servlet 'dispatcherServlet'
+[INFO] 2022-09-01 08:09:06.510  org.springframework.web.servlet.DispatcherServlet.java - Completed initialization in 4 ms
+[INFO] 2022-09-01 08:11:24.600  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 87500 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-09-01 08:11:24.604  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-09-01 08:11:25.278  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-01 08:11:25.280  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-01 08:11:25.303  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-01 08:11:25.475  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-01 08:11:25.475  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-01 08:11:25.481  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-01 08:11:26.379  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-09-01 08:11:26.390  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-01 08:11:26.390  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-09-01 08:11:26.390  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-09-01 08:11:26.478  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-09-01 08:11:26.479  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1815 ms
+[WARN] 2022-09-01 08:11:27.349  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:11:27.349  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/css/**']
+[WARN] 2022-09-01 08:11:27.350  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:11:27.350  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/js/**']
+[WARN] 2022-09-01 08:11:27.350  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/index.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:11:27.350  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/index.html']
+[WARN] 2022-09-01 08:11:27.350  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:11:27.350  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/img/**']
+[WARN] 2022-09-01 08:11:27.350  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/fonts/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:11:27.351  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/fonts/**']
+[WARN] 2022-09-01 08:11:27.351  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:11:27.351  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/favicon.ico']
+[INFO] 2022-09-01 08:11:27.395  org.springframework.security.web.DefaultSecurityFilterChain.java - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6bf570c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1796b2d4, org.springframework.security.web.context.SecurityContextPersistenceFilter@27ffd9f8, org.springframework.security.web.header.HeaderWriterFilter@6818fd48, org.springframework.security.web.authentication.logout.LogoutFilter@7ab63838, com.abc.multi_module.system.security.JwtFilter@488f3dd1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c5ca0b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26a4f9ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@935d3f9, org.springframework.security.web.session.SessionManagementFilter@159ac15f, org.springframework.security.web.access.ExceptionTranslationFilter@5a47730c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@23564dd2]
+[INFO] 2022-09-01 08:11:27.960  org.apache.coyote.http11.Http11NioProtocol.java - Starting ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-01 08:11:27.973  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] 2022-09-01 08:11:27.981  com.abc.multi_module.system.SystemApplication.java - Started SystemApplication in 3.82 seconds (JVM running for 4.43)
+[INFO] 2022-09-01 08:11:32.704  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2022-09-01 08:11:32.705  org.springframework.web.servlet.DispatcherServlet.java - Initializing Servlet 'dispatcherServlet'
+[INFO] 2022-09-01 08:11:32.708  org.springframework.web.servlet.DispatcherServlet.java - Completed initialization in 2 ms
+[INFO] 2022-09-01 08:14:57.492  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 87596 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-09-01 08:14:57.499  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-09-01 08:14:58.262  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-01 08:14:58.263  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-01 08:14:58.289  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-01 08:14:58.502  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-01 08:14:58.503  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-01 08:14:58.510  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-01 08:14:59.427  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-09-01 08:14:59.438  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-01 08:14:59.438  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-09-01 08:14:59.438  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-09-01 08:14:59.526  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-09-01 08:14:59.527  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1959 ms
+[WARN] 2022-09-01 08:15:00.333  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:15:00.334  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/css/**']
+[WARN] 2022-09-01 08:15:00.335  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:15:00.336  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/js/**']
+[WARN] 2022-09-01 08:15:00.336  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/index.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:15:00.336  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/index.html']
+[WARN] 2022-09-01 08:15:00.336  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:15:00.336  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/img/**']
+[WARN] 2022-09-01 08:15:00.336  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/fonts/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:15:00.336  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/fonts/**']
+[WARN] 2022-09-01 08:15:00.336  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:15:00.337  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/favicon.ico']
+[INFO] 2022-09-01 08:15:00.373  org.springframework.security.web.DefaultSecurityFilterChain.java - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@54895681, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2dd0a0d0, org.springframework.security.web.context.SecurityContextPersistenceFilter@7ac48f05, org.springframework.security.web.header.HeaderWriterFilter@15369d73, org.springframework.security.web.authentication.logout.LogoutFilter@5a4464c5, com.abc.multi_module.system.security.JwtFilter@488f3dd1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27ffd9f8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1894fa9f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6bf570c, org.springframework.security.web.session.SessionManagementFilter@799f354a, org.springframework.security.web.access.ExceptionTranslationFilter@4f213a2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58c42c8c]
+[INFO] 2022-09-01 08:15:00.973  org.apache.coyote.http11.Http11NioProtocol.java - Starting ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-01 08:15:00.987  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] 2022-09-01 08:15:00.996  com.abc.multi_module.system.SystemApplication.java - Started SystemApplication in 4.043 seconds (JVM running for 4.632)
+[INFO] 2022-09-01 08:15:46.311  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2022-09-01 08:15:46.313  org.springframework.web.servlet.DispatcherServlet.java - Initializing Servlet 'dispatcherServlet'
+[INFO] 2022-09-01 08:15:46.315  org.springframework.web.servlet.DispatcherServlet.java - Completed initialization in 2 ms
+[INFO] 2022-09-01 08:15:46.521  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Starting...
+[INFO] 2022-09-01 08:15:46.820  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Start completed.
+[INFO] 2022-09-01 08:19:44.811  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown initiated...
+[INFO] 2022-09-01 08:19:44.838  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown completed.
+[INFO] 2022-09-01 08:19:48.735  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 87713 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-09-01 08:19:48.741  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-09-01 08:19:49.623  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-01 08:19:49.624  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-01 08:19:49.671  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-01 08:19:49.863  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-01 08:19:49.864  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-01 08:19:49.872  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-01 08:19:50.767  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-09-01 08:19:50.777  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-01 08:19:50.778  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-09-01 08:19:50.778  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-09-01 08:19:50.864  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-09-01 08:19:50.865  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 2029 ms
+[WARN] 2022-09-01 08:19:51.664  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:19:51.665  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/css/**']
+[WARN] 2022-09-01 08:19:51.667  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:19:51.667  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/js/**']
+[WARN] 2022-09-01 08:19:51.667  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/index.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:19:51.667  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/index.html']
+[WARN] 2022-09-01 08:19:51.667  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:19:51.667  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/img/**']
+[WARN] 2022-09-01 08:19:51.667  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/fonts/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:19:51.668  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/fonts/**']
+[WARN] 2022-09-01 08:19:51.668  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:19:51.668  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/favicon.ico']
+[INFO] 2022-09-01 08:19:51.718  org.springframework.security.web.DefaultSecurityFilterChain.java - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6bf570c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1796b2d4, org.springframework.security.web.context.SecurityContextPersistenceFilter@27ffd9f8, org.springframework.security.web.header.HeaderWriterFilter@6818fd48, org.springframework.security.web.authentication.logout.LogoutFilter@7ab63838, com.abc.multi_module.system.security.JwtFilter@488f3dd1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c5ca0b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26a4f9ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@935d3f9, org.springframework.security.web.session.SessionManagementFilter@159ac15f, org.springframework.security.web.access.ExceptionTranslationFilter@5a47730c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@23564dd2]
+[INFO] 2022-09-01 08:19:52.337  org.apache.coyote.http11.Http11NioProtocol.java - Starting ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-01 08:19:52.351  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] 2022-09-01 08:19:52.361  com.abc.multi_module.system.SystemApplication.java - Started SystemApplication in 4.057 seconds (JVM running for 4.625)
+[INFO] 2022-09-01 08:20:06.492  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2022-09-01 08:20:06.494  org.springframework.web.servlet.DispatcherServlet.java - Initializing Servlet 'dispatcherServlet'
+[INFO] 2022-09-01 08:20:06.496  org.springframework.web.servlet.DispatcherServlet.java - Completed initialization in 2 ms
+[INFO] 2022-09-01 08:24:58.741  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 87833 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-09-01 08:24:58.744  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-09-01 08:24:59.412  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-01 08:24:59.413  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-01 08:24:59.435  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-01 08:24:59.616  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-01 08:24:59.617  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-01 08:24:59.627  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-01 08:25:00.463  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-09-01 08:25:00.473  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-01 08:25:00.473  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-09-01 08:25:00.473  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-09-01 08:25:00.561  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-09-01 08:25:00.562  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1752 ms
+[WARN] 2022-09-01 08:25:01.334  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:25:01.335  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/css/**']
+[WARN] 2022-09-01 08:25:01.336  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:25:01.336  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/js/**']
+[WARN] 2022-09-01 08:25:01.336  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/index.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:25:01.336  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/index.html']
+[WARN] 2022-09-01 08:25:01.336  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:25:01.336  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/img/**']
+[WARN] 2022-09-01 08:25:01.336  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/fonts/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:25:01.337  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/fonts/**']
+[WARN] 2022-09-01 08:25:01.337  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-01 08:25:01.337  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/favicon.ico']
+[INFO] 2022-09-01 08:25:01.375  org.springframework.security.web.DefaultSecurityFilterChain.java - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2a8f8555, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@402b4f81, org.springframework.security.web.context.SecurityContextPersistenceFilter@a316f6b, org.springframework.security.web.header.HeaderWriterFilter@55c1ced9, org.springframework.security.web.authentication.logout.LogoutFilter@5c82031b, com.abc.multi_module.system.security.JwtFilter@511f5b1d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@410fc508, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29bd85db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13ef7fa1, org.springframework.security.web.session.SessionManagementFilter@70b33256, org.springframework.security.web.access.ExceptionTranslationFilter@17216605, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f42b194]
+[INFO] 2022-09-01 08:25:01.957  org.apache.coyote.http11.Http11NioProtocol.java - Starting ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-01 08:25:01.974  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] 2022-09-01 08:25:01.982  com.abc.multi_module.system.SystemApplication.java - Started SystemApplication in 3.616 seconds (JVM running for 4.161)
+[INFO] 2022-09-01 08:25:07.031  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2022-09-01 08:25:07.032  org.springframework.web.servlet.DispatcherServlet.java - Initializing Servlet 'dispatcherServlet'
+[INFO] 2022-09-01 08:25:07.035  org.springframework.web.servlet.DispatcherServlet.java - Completed initialization in 3 ms

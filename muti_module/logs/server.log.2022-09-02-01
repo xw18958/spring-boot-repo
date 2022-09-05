@@ -1,0 +1,150 @@
+[INFO] 2022-09-02 01:30:36.704  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown initiated...
+[INFO] 2022-09-02 01:30:36.746  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown completed.
+[INFO] 2022-09-02 01:34:48.217  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 93464 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-09-02 01:34:48.221  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-09-02 01:34:48.870  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-02 01:34:48.871  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-02 01:34:48.895  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-02 01:34:49.086  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-02 01:34:49.086  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-02 01:34:49.093  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-02 01:34:49.971  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-09-02 01:34:49.982  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-02 01:34:49.982  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-09-02 01:34:49.982  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-09-02 01:34:50.090  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-09-02 01:34:50.091  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1814 ms
+[WARN] 2022-09-02 01:34:50.893  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-02 01:34:50.894  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/css/**']
+[WARN] 2022-09-02 01:34:50.895  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-02 01:34:50.896  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/js/**']
+[WARN] 2022-09-02 01:34:50.896  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/index.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-02 01:34:50.896  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/index.html']
+[WARN] 2022-09-02 01:34:50.896  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-02 01:34:50.896  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/img/**']
+[WARN] 2022-09-02 01:34:50.896  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/fonts/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-02 01:34:50.896  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/fonts/**']
+[WARN] 2022-09-02 01:34:50.897  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-02 01:34:50.897  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/favicon.ico']
+[INFO] 2022-09-02 01:34:50.936  org.springframework.security.web.DefaultSecurityFilterChain.java - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@402b4f81, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13ef7fa1, org.springframework.security.web.context.SecurityContextPersistenceFilter@a316f6b, org.springframework.security.web.header.HeaderWriterFilter@55c1ced9, org.springframework.security.web.authentication.logout.LogoutFilter@5c82031b, com.abc.multi_module.system.security.JwtFilter@511f5b1d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@410fc508, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29bd85db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23b1aa9, org.springframework.security.web.session.SessionManagementFilter@70b33256, org.springframework.security.web.access.ExceptionTranslationFilter@17216605, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@8eb6f9a]
+[INFO] 2022-09-02 01:34:51.480  org.apache.coyote.http11.Http11NioProtocol.java - Starting ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-02 01:34:51.495  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] 2022-09-02 01:34:51.503  com.abc.multi_module.system.SystemApplication.java - Started SystemApplication in 3.668 seconds (JVM running for 4.224)
+[INFO] 2022-09-02 01:35:04.012  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2022-09-02 01:35:04.013  org.springframework.web.servlet.DispatcherServlet.java - Initializing Servlet 'dispatcherServlet'
+[INFO] 2022-09-02 01:35:04.014  org.springframework.web.servlet.DispatcherServlet.java - Completed initialization in 1 ms
+[INFO] 2022-09-02 01:36:50.210  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Starting...
+[INFO] 2022-09-02 01:36:50.438  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Start completed.
+[INFO] 2022-09-02 01:37:21.599  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown initiated...
+[INFO] 2022-09-02 01:37:21.614  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown completed.
+[INFO] 2022-09-02 01:37:26.052  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 93542 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-09-02 01:37:26.055  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-09-02 01:37:26.648  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-02 01:37:26.649  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-02 01:37:26.686  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-02 01:37:26.849  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-02 01:37:26.850  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-02 01:37:26.857  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-02 01:37:27.639  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-09-02 01:37:27.648  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-02 01:37:27.649  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-09-02 01:37:27.649  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-09-02 01:37:27.734  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-09-02 01:37:27.734  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1625 ms
+[WARN] 2022-09-02 01:37:28.464  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-02 01:37:28.464  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/css/**']
+[WARN] 2022-09-02 01:37:28.466  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-02 01:37:28.466  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/js/**']
+[WARN] 2022-09-02 01:37:28.466  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/index.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-02 01:37:28.466  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/index.html']
+[WARN] 2022-09-02 01:37:28.466  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-02 01:37:28.466  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/img/**']
+[WARN] 2022-09-02 01:37:28.466  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/fonts/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-02 01:37:28.466  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/fonts/**']
+[WARN] 2022-09-02 01:37:28.466  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-02 01:37:28.467  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/favicon.ico']
+[INFO] 2022-09-02 01:37:28.502  org.springframework.security.web.DefaultSecurityFilterChain.java - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@935d3f9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@214b342f, org.springframework.security.web.context.SecurityContextPersistenceFilter@6c5ca0b6, org.springframework.security.web.header.HeaderWriterFilter@799f354a, org.springframework.security.web.authentication.logout.LogoutFilter@370c7cc5, com.abc.multi_module.system.security.JwtFilter@7f353a0f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a88c4f5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45287377, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5db0003d, org.springframework.security.web.session.SessionManagementFilter@55c1ced9, org.springframework.security.web.access.ExceptionTranslationFilter@7b5021d1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2dd0a0d0]
+[INFO] 2022-09-02 01:37:29.024  org.apache.coyote.http11.Http11NioProtocol.java - Starting ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-02 01:37:29.039  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] 2022-09-02 01:37:29.047  com.abc.multi_module.system.SystemApplication.java - Started SystemApplication in 3.362 seconds (JVM running for 3.863)
+[INFO] 2022-09-02 01:37:44.763  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2022-09-02 01:37:44.765  org.springframework.web.servlet.DispatcherServlet.java - Initializing Servlet 'dispatcherServlet'
+[INFO] 2022-09-02 01:37:44.767  org.springframework.web.servlet.DispatcherServlet.java - Completed initialization in 2 ms
+[INFO] 2022-09-02 01:37:45.095  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Starting...
+[INFO] 2022-09-02 01:37:45.403  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Start completed.
+[INFO] 2022-09-02 01:45:12.099  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown initiated...
+[INFO] 2022-09-02 01:45:12.174  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown completed.
+[INFO] 2022-09-02 01:45:17.731  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 93795 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-09-02 01:45:17.735  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-09-02 01:45:18.466  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-02 01:45:18.467  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-02 01:45:18.495  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-02 01:45:18.707  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-02 01:45:18.707  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-02 01:45:18.714  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-02 01:45:19.557  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-09-02 01:45:19.567  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-02 01:45:19.567  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-09-02 01:45:19.568  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-09-02 01:45:19.666  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-09-02 01:45:19.667  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1866 ms
+[WARN] 2022-09-02 01:45:20.255  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext.java - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'controller': Unsatisfied dependency expressed through field 'authentication'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.core.Authentication' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[INFO] 2022-09-02 01:45:20.259  org.apache.catalina.core.StandardService.java - Stopping service [Tomcat]
+[INFO] 2022-09-02 01:45:20.270  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.java - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-09-02 01:45:20.292  org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.java - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field authentication in com.abc.multi_module.system.controller.Controller required a bean of type 'org.springframework.security.core.Authentication' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.core.Authentication' in your configuration.
+
+[INFO] 2022-09-02 01:58:38.113  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 94163 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-09-02 01:58:38.117  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-09-02 01:58:38.729  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-02 01:58:38.730  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-02 01:58:38.753  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-02 01:58:38.939  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-02 01:58:38.940  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-02 01:58:38.948  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-02 01:58:39.760  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-09-02 01:58:39.769  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-02 01:58:39.770  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-09-02 01:58:39.770  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-09-02 01:58:39.852  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-09-02 01:58:39.853  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1679 ms
+[WARN] 2022-09-02 01:58:40.465  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext.java - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'controller': Unsatisfied dependency expressed through field 'securityUtils'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.abc.multi_module.system.security.SecurityUtils' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[INFO] 2022-09-02 01:58:40.469  org.apache.catalina.core.StandardService.java - Stopping service [Tomcat]
+[INFO] 2022-09-02 01:58:40.479  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.java - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-09-02 01:58:40.498  org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.java - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field securityUtils in com.abc.multi_module.system.controller.Controller required a bean of type 'com.abc.multi_module.system.security.SecurityUtils' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.abc.multi_module.system.security.SecurityUtils' in your configuration.
+

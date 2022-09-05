@@ -21,7 +21,8 @@ public interface UsersMapper {
     @Select("select * from users where username = #{username} AND password = #{password}")
     Users userQuery(Users users);
 
-    @Select("select * from users where username = #{username}")
+//    @Select("select * from users where username = #{username}")
+@Select("select * from sys_users where username = #{username}")
     Users userExistance(Users users);
 
 //    @Select("select * from users where username = #{username}")

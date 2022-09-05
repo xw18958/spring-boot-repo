@@ -41,6 +41,10 @@ public class Controller {
     public List<Users> getAll() {
         return usersMapper.findAll();
     }
+    @GetMapping("/")
+    public String hello() {
+        return "hello";
+    }
 
     @GetMapping("/allSession")
     public List<Session> allSession() {

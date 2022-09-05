@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(GlobalException.class)
+    @ExceptionHandler({GlobalException.class})
     public @ResponseBody Result globalExceptionHandler(GlobalException e){
         Result res = new Result();
         res.setCode(e.getCode());
