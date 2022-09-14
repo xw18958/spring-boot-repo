@@ -1,0 +1,74 @@
+[WARN] 2022-09-13 14:16:09.664  com.zaxxer.hikari.pool.HikariPool.java - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m11s33ms).
+[INFO] 2022-09-13 14:48:33.658  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown initiated...
+[INFO] 2022-09-13 14:48:33.671  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown completed.
+[INFO] 2022-09-13 14:52:31.801  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 20397 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-09-13 14:52:31.804  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-09-13 14:52:32.478  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-13 14:52:32.479  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-13 14:52:32.512  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-13 14:52:32.695  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-13 14:52:32.696  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-13 14:52:32.708  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-13 14:52:33.562  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-09-13 14:52:33.571  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-13 14:52:33.572  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-09-13 14:52:33.572  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-09-13 14:52:33.653  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-09-13 14:52:33.653  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1792 ms
+[WARN] 2022-09-13 14:52:34.481  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-13 14:52:34.482  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/css/**']
+[WARN] 2022-09-13 14:52:34.483  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-13 14:52:34.483  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/js/**']
+[WARN] 2022-09-13 14:52:34.483  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/index.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-13 14:52:34.484  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/index.html']
+[WARN] 2022-09-13 14:52:34.484  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-13 14:52:34.484  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/img/**']
+[WARN] 2022-09-13 14:52:34.484  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/fonts/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-13 14:52:34.484  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/fonts/**']
+[WARN] 2022-09-13 14:52:34.484  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-13 14:52:34.484  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/favicon.ico']
+[INFO] 2022-09-13 14:52:34.521  org.springframework.security.web.DefaultSecurityFilterChain.java - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@20ffb8d5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@307c59ea, org.springframework.security.web.context.SecurityContextPersistenceFilter@7bf018dd, org.springframework.security.web.header.HeaderWriterFilter@2674d4f6, org.springframework.security.web.authentication.logout.LogoutFilter@1796b2d4, com.abc.multi_module.system.security.JwtFilter@474179fa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f6c2763, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@661e1399, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57e03347, org.springframework.security.web.session.SessionManagementFilter@250967f1, org.springframework.security.web.access.ExceptionTranslationFilter@38087342, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a2546d6]
+[INFO] 2022-09-13 14:52:35.052  org.apache.coyote.http11.Http11NioProtocol.java - Starting ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-13 14:52:35.067  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] 2022-09-13 14:52:35.076  com.abc.multi_module.system.SystemApplication.java - Started SystemApplication in 3.665 seconds (JVM running for 4.22)
+[INFO] 2022-09-13 14:52:37.033  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2022-09-13 14:52:37.034  org.springframework.web.servlet.DispatcherServlet.java - Initializing Servlet 'dispatcherServlet'
+[INFO] 2022-09-13 14:52:37.035  org.springframework.web.servlet.DispatcherServlet.java - Completed initialization in 1 ms
+[INFO] 2022-09-13 14:52:37.099  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Starting...
+[INFO] 2022-09-13 14:52:37.324  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Start completed.
+[WARN] 2022-09-13 14:56:28.166  com.zaxxer.hikari.pool.HikariPool.java - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m50s720ms).
+[INFO] 2022-09-13 14:59:17.632  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown initiated...
+[INFO] 2022-09-13 14:59:17.652  com.zaxxer.hikari.HikariDataSource.java - HikariPool-1 - Shutdown completed.
+[INFO] 2022-09-13 14:59:35.150  com.abc.multi_module.system.SystemApplication.java - Starting SystemApplication using Java 13 on MacBook-Pro.broadband with PID 20568 (/Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module/system/target/classes started by wangjianxin in /Users/wangjianxin/Documents/GitHub/spring-boot-repo/muti_module)
+[INFO] 2022-09-13 14:59:35.153  com.abc.multi_module.system.SystemApplication.java - No active profile set, falling back to 1 default profile: "default"
+[INFO] 2022-09-13 14:59:35.791  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-13 14:59:35.792  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-13 14:59:35.831  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-13 14:59:36.012  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO] 2022-09-13 14:59:36.013  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO] 2022-09-13 14:59:36.023  org.springframework.data.repository.config.RepositoryConfigurationDelegate.java - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+[INFO] 2022-09-13 14:59:36.854  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat initialized with port(s): 8080 (http)
+[INFO] 2022-09-13 14:59:36.863  org.apache.coyote.http11.Http11NioProtocol.java - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-13 14:59:36.863  org.apache.catalina.core.StandardService.java - Starting service [Tomcat]
+[INFO] 2022-09-13 14:59:36.863  org.apache.catalina.core.StandardEngine.java - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[INFO] 2022-09-13 14:59:36.948  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring embedded WebApplicationContext
+[INFO] 2022-09-13 14:59:36.948  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.java - Root WebApplicationContext: initialization completed in 1739 ms
+[WARN] 2022-09-13 14:59:37.789  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-13 14:59:37.790  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/css/**']
+[WARN] 2022-09-13 14:59:37.791  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-13 14:59:37.792  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/js/**']
+[WARN] 2022-09-13 14:59:37.792  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/index.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-13 14:59:37.792  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/index.html']
+[WARN] 2022-09-13 14:59:37.792  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-13 14:59:37.792  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/img/**']
+[WARN] 2022-09-13 14:59:37.792  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/fonts/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-13 14:59:37.792  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/fonts/**']
+[WARN] 2022-09-13 14:59:37.792  org.springframework.security.config.annotation.web.builders.WebSecurity.java - You are asking Spring Security to ignore Ant [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO] 2022-09-13 14:59:37.792  org.springframework.security.web.DefaultSecurityFilterChain.java - Will not secure Ant [pattern='/favicon.ico']
+[INFO] 2022-09-13 14:59:37.842  org.springframework.security.web.DefaultSecurityFilterChain.java - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@20ffb8d5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@307c59ea, org.springframework.security.web.context.SecurityContextPersistenceFilter@7bf018dd, org.springframework.security.web.header.HeaderWriterFilter@2674d4f6, org.springframework.security.web.authentication.logout.LogoutFilter@1796b2d4, com.abc.multi_module.system.security.JwtFilter@474179fa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f6c2763, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@661e1399, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57e03347, org.springframework.security.web.session.SessionManagementFilter@250967f1, org.springframework.security.web.access.ExceptionTranslationFilter@38087342, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a2546d6]
+[INFO] 2022-09-13 14:59:38.460  org.apache.coyote.http11.Http11NioProtocol.java - Starting ProtocolHandler ["http-nio-8080"]
+[INFO] 2022-09-13 14:59:38.474  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.java - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] 2022-09-13 14:59:38.482  com.abc.multi_module.system.SystemApplication.java - Started SystemApplication in 3.885 seconds (JVM running for 4.451)
+[INFO] 2022-09-13 14:59:40.495  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].java - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2022-09-13 14:59:40.496  org.springframework.web.servlet.DispatcherServlet.java - Initializing Servlet 'dispatcherServlet'
+[INFO] 2022-09-13 14:59:40.498  org.springframework.web.servlet.DispatcherServlet.java - Completed initialization in 2 ms
