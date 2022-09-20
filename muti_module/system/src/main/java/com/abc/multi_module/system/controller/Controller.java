@@ -19,10 +19,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -139,9 +136,20 @@ public class Controller {
         return "inserted!";
     }
 
+    @PostMapping("/user/update/{password}/{username}")
+    String updateUserPassword(@PathVariable(value = "password") String password, @PathVariable(value = "username") String username){
+        usersMapper.update(password,username);
+        return "Password updated.";
+    }
+
     @GetMapping("/sys_users")
     List<SysUser> sysUsers(){
         return usersMapper.findAll();
+    }
+
+    @GetMapping("/user/paging")
+    List<SysUser> paging(){
+        return usersMapper.paging();
     }
 
     @GetMapping("/exception/all")

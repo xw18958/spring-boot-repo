@@ -5,7 +5,6 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 
 @Data
-//@AllArgsConstructor
 public class SysUser {
     @Id
     int id;
